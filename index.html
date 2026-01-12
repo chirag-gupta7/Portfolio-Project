@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retro Future Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto+Mono:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- PDF.js for Certificate Previews -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+    <script>
+        pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js';
+    </script>
+</head>
+
+<body>
+    <div class="scanline"></div>
+
+    <!-- Top Header (Sticky) -->
+    <header class="top-header">
+        <button id="theme-toggle" class="retro-btn top-left-btn">LIGHT MODE</button>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#hero">HOME</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#projects">PROJECTS</a></li>
+                <li><a href="#certificates">CERTIFICATES</a></li>
+
+                <li><a href="#contact">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Left Corner Floating Widget -->
+    <aside class="left-widget" id="left-widget">
+        <div class="logo-container">
+            <div class="logo-text">CHIRAG.EXE</div>
+        </div>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/chirag-ok-gupta/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/chirag-gupta7" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://www.instagram.com/chirag_gupta._.1/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        </div>
+    </aside>
+
+    <main>
+        <section id="hero" class="section fade-in-section">
+            <div class="content-box">
+                <h1 class="glitch" data-text="I_AM_CHIRAG">I_AM_CHIRAG</h1>
+                <p class="subtitle">INITIALIZING PORTFOLIO PROTOCOL...</p>
+                <a href="#projects" class="retro-btn primary">VIEW PROJECTS</a>
+            </div>
+        </section>
+
+        <section id="about" class="section fade-in-section">
+            <div class="content-box about-container">
+                <!-- Image floated right, so put it first or use CSS order? 
+                     For standard float: right, it's best to have it first in the container. -->
+                <div class="about-image">
+                    <img src="assets/images/Personal/very good.png" alt="Chirag Profile" class="profile-pic">
+                </div>
+                <div class="about-text">
+                    <h2><span class="prefix">></span> ABOUT_CHIRAG</h2>
+                    <p><strong>Name:</strong> Chirag<br>
+                        <strong>Location:</strong> Jaipur, IN<br>
+                        <strong>Class:</strong> Backend Specialist / AI Integrator
+                    </p>
+
+                    <p><strong>The Mission:</strong><br>
+                        To build secure, modular backends and intelligent tools that actually work—usually involving Python, clean APIs, and a lot of coffee.</p>
+
+                    <p><strong>The Arsenal:</strong></p>
+                    <ul style="list-style: none; padding-left: 0;">
+                        <li>🐍 <strong>Python, Node & APIs:</strong> Building the logic behind the curtain (Flask/Express) so everything just <em>works</em>.</li>
+                        <li>🐳 <strong>DevOps & Data:</strong> Using Docker and PostgreSQL to keep deployments smooth and data structured.</li>
+                        <li>🧠 <strong>AI & ML:</strong> From predicting heart disease to integrating voice AI—making data useful.</li>
+                        <li>📫 <strong>EMAIL :</strong>chirag15470956@gmail.com.</li>
+                    </ul>
+
+                    <p><strong>The Fuel:</strong></p>
+                    <ul style="list-style: none; padding-left: 0;">
+                        <li>💪 <strong>The Gym:</strong> For physical debugging and clearing the cache.</li>
+                        <li>📺 <strong>Anime:</strong> For strategic inspiration and epic soundtracks.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="section fade-in-section">
+            <div class="content-box">
+                <h2><span class="prefix">></span> SKILLS</h2>
+                <div class="skill-grid">
+                    <div class="skill-item">Artificial Intelligence for Design and Business</div>
+                    <div class="skill-item">Artificial Intelligence (General Applications)</div>
+                    <div class="skill-item">AI Media Ethics</div>
+                    <div class="skill-item">Microsoft Security</div>
+                    <div class="skill-item">Governance, Risk Management, and Compliance (GRC)</div>
+                    <div class="skill-item">Cloud Security</div>
+                    <div class="skill-item">Systems Thinking</div>
+                    <div class="skill-item">Quality Management</div>
+                    <div class="skill-item">AI Productivity Hacks & Workday Optimization</div>
+                    <div class="skill-item">Statistics (Foundations)</div>
+                    <div class="skill-item">Python</div>
+                    <div class="skill-item">Node.js</div>
+                    <div class="skill-item">Prism</div>
+                    <div class="skill-item">TypeScript</div>
+                    <div class="skill-item">JavaScript</div>
+                    <div class="skill-item">Java</div>
+                    <div class="skill-item">Data Analyst</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="section fade-in-section">
+            <div class="content-box">
+                <h2><span class="prefix">></span> PROJECTS</h2>
+                <div class="project-grid">
+                    <!-- Project 1 -->
+                    <article class="project-card">
+                        <div class="project-image">
+                            <!-- Placeholder image - User should replace this -->
+                            <img src="assets/images/project%201/pro.png" alt="Project 2 Preview"
+                            onerror="this.style.display='none'; this.parentElement.innerHTML='<div class=\'img-placeholder\'>NO IMAGE</div>'">
+                        </div>
+                        <div class="card-header">
+                            <span class="folder-icon"><i class="far fa-folder-open"></i></span>
+                            <h3>TYPE MASTER</h3>
+                        </div>
+                        <p>A blazing-fast typing speed test application built with React, TypeScript, and Vite, featuring real-time accuracy tracking and custom hook-based state management.</p>
+                        <div class="card-links">
+                            <a href="https://typemaster-frontend.vercel.app/" class="text-link" target="_blank" rel="noopener">DEMO</a>
+                            <a href="https://github.com/chirag-gupta7/Type-Master" class="text-link" target="_blank" rel="noopener">CODE</a>
+                        </div>
+                    </article>
+                    <!-- Project 2 -->
+                    <article class="project-card">
+                        <div class="project-image">
+                            <img src="assets/images/project%202/thumbnail.jpg" alt="Project 1 Preview"
+                                onerror="this.style.display='none'; this.parentElement.innerHTML='<div class=\'img-placeholder\'>NO IMAGE</div>'">
+                        </div>
+                        <div class="card-header">
+                            <span class="folder-icon"><i class="far fa-folder-open"></i></span>
+                            <h3>HEART-DISEASE-DETECTION</h3>
+                        </div>
+                        <p>This project implements and tunes a hybrid machine learning pipeline, combining XGBoost, deep neural networks, and meta-learning with pseudo-labeling across multiple datasets to predict heart disease with high recall and precision.</p>
+                        <div class="card-links">
+                            <a href="https://dnn-xgb-heart.vercel.app" class="text-link" target="_blank" rel="noopener">DEMO</a>
+                            <a href="https://github.com/chirag-gupta7/Heart-disease-detection" class="text-link" target="_blank" rel="noopener">CODE</a>
+                            <a href="assets/images/project%202/hybrid_ml_heart_disease_paper.pdf" class="text-link" target="_blank" rel="noopener">R.PAPER</a>
+                        </div>
+                    </article>
+                    <!-- Project 3 -->
+                    <article class="project-card">
+                        <div class="project-image">
+                            <img src="assets/images/project%203/image.png" alt="SmartMeet AI Preview"
+                                onerror="this.style.display='none'; this.parentElement.innerHTML='<div class=\'img-placeholder\'>NO IMAGE</div>'">
+                        </div>
+                        <div class="card-header">
+                            <span class="folder-icon"><i class="far fa-folder-open"></i></span>
+                            <h3>SMARTMEET-AI</h3>
+                        </div>
+                        <p>Smartmeet AI is an intelligent scheduling assistant that leverages artificial intelligence to automate meeting coordination, optimize calendar management, and streamline collaboration.</p>
+                        <div class="card-links">
+                            <!-- <a href="https://voice-ai-assistant.vercel.app" class="text-link" target="_blank" rel="noopener">DEMO</a> -->
+                            <a href="https://github.com/chirag-gupta7/SmartMeet-AI" class="text-link" target="_blank" rel="noopener">CODE</a>
+                        </div>
+                    </article>
+                    <!-- Project 4 -->
+                    <article class="project-card">
+                        <div class="project-image">
+                            <img src="assets/images/project%204/image.png" alt="Backend-Scalable-Project Preview"
+                                onerror="this.style.display='none'; this.parentElement.innerHTML='<div class=\'img-placeholder\'>NO IMAGE</div>'">
+                        </div>
+                        <div class="card-header">
+                            <span class="folder-icon"><i class="far fa-folder-open"></i></span>
+                            <h3>Backend-Scalable-Project</h3>
+                        </div>
+                        <p>A practical backend development assignment designed to evaluate or refine core server-side skills. It likely involves designing RESTful APIs, managing database interactions, and implementing application logic to solve a specific problem statement suitable for an intern level.</p>
+                        <div class="card-links">
+                            <a href="https://github.com/chirag-gupta7/Backend-Developer-Intern-Project-Assignment" class="text-link" target="_blank" rel="noopener">CODE</a>
+                            <a href="https://github.com/chirag-gupta7/Backend-Developer-Intern-Project-Assignment/blob/main/docs/api_documentation.md" class="text-link" target="_blank" rel="noopener">DOCS</a>
+                        </div>
+                    </article>
+                    <!-- Project 5 -->
+                    <article class="project-card">
+                        <div class="project-image">
+                            <img src="assets/images/project%205/image.png" alt="Simplified-Trading-Bot Preview"
+                                onerror="this.style.display='none'; this.parentElement.innerHTML='<div class=\'img-placeholder\'>NO IMAGE</div>'">
+                        </div>
+                        <div class="card-header">
+                            <span class="folder-icon"><i class="far fa-folder-open"></i></span>
+                            <h3>Simplified-Trading-Bot</h3>
+                        </div>
+                        <p>An accessible and easy-to-configure automated trading tool designed to execute basic investment strategies with minimal setup, making algorithmic trading approachable for beginners.</p>
+                        <div class="card-links">
+                            <!-- <a href="https://cloud-cost-optimizer.vercel.app" class="text-link" target="_blank" rel="noopener">DEMO</a> -->
+                            <a href="https://github.com/chirag-gupta7/Simplified-Trading-Bot" class="text-link" target="_blank" rel="noopener">CODE</a>
+                        </div>
+                    </article>
+                    <!-- Project 6 -->
+                    <article class="project-card">
+                        <div class="project-image">
+                            <img src="assets/images/project%206/image.png" alt="Whiteboard-APP Preview"
+                                onerror="this.style.display='none'; this.parentElement.innerHTML='<div class=\'img-placeholder\'>NO IMAGE</div>'">
+                        </div>
+                        <div class="card-header">
+                            <span class="folder-icon"><i class="far fa-folder-open"></i></span>
+                            <h3>Whiteboard-APP</h3>
+                        </div>
+                        <p>A collaborative digital whiteboard application designed for real-time sketching, brainstorming, and visual communication across devices.</p>
+                        <div class="card-links">
+                            <a href="https://github.com/chirag-gupta7/Whiteboard-APP" class="text-link" target="_blank" rel="noopener">CODE</a>
+                            <a href="https://youtu.be/WQke6wRepOE" class="text-link" target="_blank" rel="noopener">DEMO</a>
+                        </div>
+                    </article>
+                    <!-- Project 7 -->
+                    <article class="project-card">
+                        <div class="project-image">
+                            <img src="assets/images/project%207/image.png" alt="PHOTO-RECOGNIZER Preview"
+                                onerror="this.style.display='none'; this.parentElement.innerHTML='<div class=\'img-placeholder\'>NO IMAGE</div>'">
+                        </div>
+                        <div class="card-header">
+                            <span class="folder-icon"><i class="far fa-folder-open"></i></span>
+                            <h3>PHOTO-RECOGNIZER</h3>
+                        </div>
+                        <p>An intelligent web application that analyzes images using AI to identify objects and extract comprehensive metadata. Built with Flask and Python, it features real-time classification via Hugging Face models, detailed EXIF data extraction, and advanced color analysis within a modern, responsive interface</p>
+                        <div class="card-links">
+                            <a href="https://github.com/chirag-gupta7/photo-recognizer" class="text-link" target="_blank" rel="noopener">CODE</a>
+                            <a href="https://youtu.be/iQtsDFo8u_E" class="text-link" target="_blank" rel="noopener">DEMO</a>
+                        </div>
+                    </article>
+                    <!-- Project 8 -->
+                    <article class="project-card">
+                        <div class="project-image">
+                            <img src="assets/images/project%208/image.png" alt="QR-CODE-GENERATOR Preview"
+                                onerror="this.style.display='none'; this.parentElement.innerHTML='<div class=\'img-placeholder\'>NO IMAGE</div>'">
+                        </div>
+                        <div class="card-header">
+                            <span class="folder-icon"><i class="far fa-folder-open"></i></span>
+                            <h3>QR-CODE-GENERATOR</h3>
+                        </div>
+                        <p>A comprehensive React and TypeScript application designed for generating fully customizable QR codes. It features real-time previews, batch processing via CSV uploads, logo embedding, and multiple export options including PNG and SVG.</p>
+                        <div class="card-links">
+                            <a href="https://github.com/chirag-gupta7/QR-Code-Generator" class="text-link" target="_blank" rel="noopener">CODE</a>
+                            <a href="https://youtu.be/LHTU52xF-zc" class="text-link" target="_blank" rel="noopener">DEMO</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+
+
+        <section id="certificates" class="section fade-in-section">
+            <div class="content-box">
+                <h2><span class="prefix">></span> CERTIFICATES</h2>
+                <div class="cert-gallery">
+                    <button class="gallery-nav prev-nav" id="cert-prev">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <div class="cert-scroll-wrapper">
+                        <div class="cert-cards-container" id="cert-cards">
+                            <!-- Certificate cards injected via JS -->
+                        </div>
+                    </div>
+                    <button class="gallery-nav next-nav" id="cert-next">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+                <div class="cert-dots" id="cert-dots"></div>
+            </div>
+        </section>
+
+        <section id="contact" class="section fade-in-section">
+            <div class="content-box">
+                <h2><span class="prefix">></span> CONTACT</h2>
+                <form class="retro-form">
+                    <div class="form-group">
+                        <label for="name">NAME:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">EMAIL:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">MESSAGE:</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="retro-btn">SEND_MESSAGE</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>COPYRIGHT (C) 2025. ALL RIGHTS RESERVED.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
