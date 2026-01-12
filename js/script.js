@@ -105,18 +105,22 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Certificate Gallery Logic
     const certificates = [
-        // AI & GenAI (Priority 1)
-        { title: "Intro to Gen AI", file: "(GOOGLE) Introduction to Generative AI.pdf", category: "AI" },
-        { title: "Intro to LLMs", file: "(GOOGLE) Introduction to Large Language Models.pdf", category: "AI" },
-        { title: "AI Principles", file: "(GOOGLE)  Applying AI Principles with Google.pdf", category: "AI" },
-        { title: "AI Basics", file: "Understanding of AI basics.pdf", category: "AI" },
-        { title: "Prompt Engineering", file: "(COLEDGE)Prompt Engineering Basics.pdf", category: "AI" },
-
-        // Security & Systems (Priority 2)
+        // Security & Systems (Priority 1)
         { title: "Cybersecurity Foundations", file: "(GOOGLE) Foundations of Cybersecurity.pdf", category: "Security" },
-        { title: "Microsoft Security", file: "Microsoft Security Essentials.pdf", category: "Security" },
         { title: "Linux & SQL", file: "(GOOGLE) Linux and SQL.pdf", category: "Systems" },
         { title: "Networks", file: "(GOOGLE) Networks and Network.pdf", category: "Systems" },
+        { title: "Microsoft Security", file: "Microsoft Security Essentials.pdf", category: "Security" },
+        { title: "Advanced Network", file: "(LEARN QUEST) Advanced Network.pdf", category: "Security" },
+        
+        // AI & GenAI (Priority 2)
+        { title: "Intro to Gen AI", file: "(GOOGLE) Introduction to Generative AI.pdf", category: "AI" },
+        { title: "Prompt Engineering", file: "(COLEDGE)Prompt Engineering Basics.pdf", category: "AI" },
+        { title: "Intro to LLMs", file: "(GOOGLE) Introduction to Large Language Models.pdf", category: "AI" },
+        { title: "Data Visualization", file: "Learning Data Visualization.pdf", category: "DS" },
+        { title: "AI Principles", file: "(GOOGLE)  Applying AI Principles with Google.pdf", category: "AI" },
+        { title: "Model Context Protocol", file: "(FRACTAL)Model Context Protocol (MCP) Mastery.pdf", category: "Data" },
+        { title: "AI Basics", file: "Understanding of AI basics.pdf", category: "AI" },
+
 
         // Data & General (Priority 3)
         { title: "Database Specialist", file: "(VANDERVILT) Database Specialist with Prompt Enginerring.pdf", category: "Data" },
